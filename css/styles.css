@@ -1,0 +1,40 @@
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+.landingwrapper{
+  height: 100%;
+}
+
+.container1{
+  height: 100%;
+  background-color: black;
+
+}
+
+.container2{
+  height: auto;
+  background-color: #f7ed7e;
+
+}
+
+h1{
+  color: white;
+  font-size: 500%;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.content{
+  margin-top: 150px;
+}
+
+
+.introwords{
+  color: white;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.imground{
+  border-radius: 50%;
+}
