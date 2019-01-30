@@ -15,9 +15,14 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <link rel="stylesheet" href="css/styles.css" />
+
+    <script>$("#fileRequest").click(function() {
+    // // hope the server sets Content-Disposition: attachment!
+    window.location = 'css/Resume.pdf';
+    });</script>
 
     <title>Vishnu</title>
 
@@ -37,7 +42,7 @@
                   <a class="nav-link active" href="#skill">Skills</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#contact">Contact</a>
+                  <a class="nav-link active" href="#project">Projects</a>
                 </li>
               </ul></div>
             </div>
@@ -62,7 +67,7 @@
         <div class="row align-items-center justify-content-center">
           <div class="col-auto">
             <button type="button" class="btn btn-secondary buttonlanding">Contact</button>
-            <button type="button" class="btn btn-secondary buttonlanding">Resume</button>
+            <button type="button" class="btn btn-secondary buttonlanding" id="fileRequest">Resume</button>
           </div>
         </div>
       </div>
@@ -182,7 +187,7 @@
       </div>
 
     <div class="container-fluid container5">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" id="project">
         <div class="col-auto">
           <p class="h5 my-5">
             Projects</p>
@@ -195,7 +200,7 @@
               <h5 class="card-title">ETL Tool</h5>
               <h6 class="card-subtitle mb-2 text-muted">Python</h6>
               <p class="card-text">Extract, transform and load operations were performed on a data set using Python implementing multi-threading</p>
-              <a href="#" class="card-link">Github</a>
+              <a href="https://github.com/Vishnualuri/ETL-Python" class="card-link">Github</a>
             </div>
           </div>
           </div>
@@ -205,7 +210,7 @@
                 <h5 class="card-title">Congestion Prediction</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Pyspark, Pandas, Numpy</h6>
                 <p class="card-text">In this project, logistic regression was used to predict if there is congestion in a particular route in Dublin city.</p>
-                <a href="#" class="card-link">Github</a>
+                <a href="https://github.com/Vishnualuri/Pyspark" class="card-link">Github</a>
               </div>
             </div>
           </div>
@@ -215,7 +220,7 @@
                 <h5 class="card-title">Single Page Web Application</h5>
                 <h6 class="card-subtitle mb-2 text-muted">JavaScript, CSS, HTML</h6>
                 <p class="card-text">An interactive single page web application was developed using Java script, HTML and CSS and hosted in local python server.</p>
-                <a href="#" class="card-link">Github</a>
+                <a href="https://github.com/Vishnualuri/Web-Development" class="card-link">Github</a>
               </div>
             </div>
           </div>
@@ -227,7 +232,7 @@
               <h5 class="card-title">Career Longevity of NBA rookies</h5>
               <h6 class="card-subtitle mb-2 text-muted">R, WEKA</h6>
               <p class="card-text">Career longevity was predicted from the data set by choosing best set of algorithms in WEKA.</p>
-              <a href="#" class="card-link">Github</a>
+              <a href="https://github.com/Vishnualuri/WEKA" class="card-link">Github</a>
             </div>
           </div>
           </div>
@@ -237,7 +242,7 @@
                 <h5 class="card-title">Analysis of H1B Petitions in 2016</h5>
                 <h6 class="card-subtitle mb-2 text-muted">R</h6>
                 <p class="card-text">Data was analyzed upon applying several sampling techniques and central limit theorem.</p>
-                <a href="#" class="card-link">Github</a>
+                <a href="https://github.com/Vishnualuri/Analytics" class="card-link">Github</a>
               </div>
             </div>
           </div>
@@ -247,7 +252,7 @@
                 <h5 class="card-title">Sentiment Analysis on tweets</h5>
                 <h6 class="card-subtitle mb-2 text-muted">R</h6>
                 <p class="card-text">Performed sentiment analysis for tweets on a set of six banks, to determine which banks stocks were impacted the most.</p>
-                <a href="#" class="card-link">Github</a>
+                <a href="https://github.com/Vishnualuri/Sentiment-Analysis" class="card-link">Github</a>
               </div>
             </div>
           </div>
@@ -260,7 +265,7 @@
               <h5 class="card-title">University Database</h5>
               <h6 class="card-subtitle mb-2 text-muted">SQL</h6>
               <p class="card-text">Built a model of University database with minimum redundancy implementing triggers and indexes.</p>
-              <a href="#" class="card-link">Github</a>
+              <a href="https://github.com/Vishnualuri/SQL" class="card-link">Github</a>
             </div>
           </div>
           </div>
@@ -270,7 +275,7 @@
                 <h5 class="card-title">UNIX Shell Interpreter</h5>
                 <h6 class="card-subtitle mb-2 text-muted">C</h6>
                 <p class="card-text">Implemented several system calls by writing a custom shell interpreter in C language.</p>
-                <a href="#" class="card-link">Github</a>
+                <a href="https://github.com/Vishnualuri/UNIX-Shell-Interpreter" class="card-link">Github</a>
               </div>
             </div>
           </div>
@@ -280,7 +285,7 @@
                 <h5 class="card-title">Night out cost around the world</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Tableau</h6>
                 <p class="card-text">Several demographics and dashboards are created on tableau based on several inferences extracted from the data set.</p>
-                <a href="#" class="card-link">Github</a>
+                <a href="https://github.com/Vishnualuri/Tableau" class="card-link">Github</a>
               </div>
             </div>
           </div>
@@ -303,7 +308,7 @@
         </div>
         <div class="col-md-3 col-xs-5 col-sm-5 text-center">
           <p>
-            vishnuvardhan.aluri@gmail.com
+            valuri@bu.edu
           </p>
         </div>
         <div class="col-md-3 col-xs-5 col-sm-5 text-center">
